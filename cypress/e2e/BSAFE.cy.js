@@ -1,0 +1,35 @@
+describe("BSAFE", () => {
+  it("tests BSAFE", () => {
+    cy.viewport(1365, 953);
+    cy.visit("https://bsafe-ui-git-staging-infinity-base.vercel.app/");
+    cy.get("#chakra-modal--body-\\:r4\\: > div > div:nth-of-type(2)").click();
+    cy.get("#field-\\:ro\\:").dblclick();
+    cy.get("#field-\\:ro\\:").click();
+    cy.get("#field-\\:ro\\:").type("");
+    cy.get("#field-\\:ro\\:").type("n");
+    cy.get("#field-\\:ro\\:").type("N");
+    cy.get("#field-\\:ro\\:").type("Nome");
+    cy.get("#field-\\:rp\\:").type("henriqueinfinity3@");
+    cy.get("#field-\\:rp\\:").type("henriqueinfinity3@gmail.com");
+    cy.get("label:nth-of-type(1) > span.chakra-radio__label").click();
+    cy.get("button.css-10kba8u").click();
+    cy.get("div.chakra-skeleton > div > div:nth-of-type(1) div.css-0").click();
+    cy.get("#chakra-toast-manager-top-right > div > div > div").click();
+    cy.get("div.css-0 > button").click();
+    cy.get("#chakra-modal--body-\\:r10\\: > div:nth-of-type(2) > div").click();
+    cy.get("#field-\\:r14\\:").click();
+    cy.get("#field-\\:r14\\:").type("V");
+    cy.get("#field-\\:r14\\:").type("Vida");
+    cy.get("#field-\\:r15\\:").type("abcd");
+    cy.get("button.css-11909tj").click();
+    cy.get("#tabs-\\:r13\\:--tabpanel-1 button").click();
+    cy.get("div.css-1bunjuh > div > div:nth-of-type(2) path:nth-of-type(2)").click();
+    cy.get("button.css-11909tj").click();
+    cy.get("button.css-cbrz9l").click();
+    cy.visit("https://bsafe-ui-git-staging-infinity-base.vercel.app/workspace/12a50745-2b8d-47f0-b50a-b3abd8f9166a/vault/me");
+    cy.get("div:nth-of-type(3) div.css-s8kpxh > p").click();
+    cy.get("div.chakra-card > button").click();
+    cy.get("#field-\\:r23\\:").click();
+    cy.get("div.css-1m96k62 p").click();
+  });
+});
